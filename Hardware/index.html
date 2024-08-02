@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <span class="titulo">Arraste e Encaixe os componentes</span>
+        <div class="resolução"><div id="resolucao" >
+          A resolução da tela é: <span id="resolucao-texto"></span>
+        </div> 
+    </header>
+   
+      <div class="plugados">
+          
+          <div class="slot ram-slot" id="ram-slot"></div>
+          <img src="imagens/ram-encaixada.jpg" alt="Memória RAM Encaixada" class="ram-encaixada" id="ram-encaixada">
+      
+          <div class="slot cpu-slot" id="cpu-slot"></div>
+          <img src="imagens/cpu-encaixada.png" alt="CPU Encaixada" class="cpu-encaixada" id="cpu-encaixada">
+      
+          <div class="slot gpu-slot" id="gpu-slot"></div>
+          <img src="imagens/gpu-encaixada.jpeg" alt="Placa Gráfica Encaixada" class="gpu-encaixada" id="gpu-encaixada">
+      
+          <div class="slot keyboard-slot" id="keyboard-slot"></div>
+          <img src="imagens/keyboard-encaixado.png" alt="Teclado Encaixado" class="keyboard-encaixada" id="keyboard-encaixada">
+      
+          <div class="slot mouse-slot" id="mouse-slot"></div>
+          <img src="imagens/mouse-encaixada.jpg" alt="Mouse Encaixado" class="mouse-encaixada" id="mouse-encaixada">
+      
+          <div class="slot display-slot" id="display-slot"></div>
+          <img src="imagens/display-encaixada.jpg" alt="Display Encaixado" class="display-encaixada" id="display-encaixada">
+          </div>
+          <div class="slot fonte-slot" id="fonte-slot"></div>
+          <img src="imagens/fonte-encaixada.jpeg" alt="Fonte Encaixada" class="fonte-encaixada" id="fonte-encaixada">
+          <div class="slot hd-slot" id="hd-slot"></div>
+          <img src="imagens/hd-encaixada.jpg" alt="HD Encaixada" class="hd-encaixada" id="hd-encaixada">
+          </div>
+        </div>        
+            <img src="imagens/motherboard.jpg" alt="Placa Mãe" class="motherboard">          
+        <div class="components-list">
+          <img src="imagens/ram.jpg" alt="Memória RAM" class="component ram" draggable="true" id="ram">
+          <img src="imagens/cpu.png" alt="CPU" class="component cpu" draggable="true" id="cpu">
+          <img src="imagens/gpu.jpg" alt="Placa Gráfica" class="component gpu" draggable="true" id="gpu">
+          <img src="imagens/keyboard.png" alt="Teclado" class="component keyboard" draggable="true" id="keyboard">
+          <img src="imagens/mouse.png" alt="Mouse" class="component mouse" draggable="true" id="mouse">
+          <img src="imagens/display.jpg" alt="Display" class="component display" draggable="true" id="display">
+          <img src="imagens/fonte.jpeg" alt="fonte" class="component fonte" draggable="true" id="fonte">
+          <img src="imagens/hd.jpg" alt="HD ssd" class="component hd" draggable="true" id="hd">
+        </div>
+        <br>
+        <footer class="rodapé">
+          endereço e dados da esolca e turma
+        </footer> 
+    
+  <script src="main.js"> </script>
+</body>
+</html>
+
+
+

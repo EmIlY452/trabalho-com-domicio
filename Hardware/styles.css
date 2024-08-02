@@ -1,0 +1,353 @@
+/* Estilos globais */
+@import url(estilos/header.css);
+@import url(estilos/footer.css);
+
+.container {
+  position: relative;
+  width: auto;  
+}
+.components-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.component {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+  top: 20px;
+  margin-bottom: 0px; /* Espaçamento entre as imagens */
+}
+
+.slot {
+  position: absolute;
+  border: 2px dashed red;
+}
+
+.ram {
+  width: 150px; /* Triplo do tamanho original */
+}
+
+.ram-slot {
+  top: 200px; /* Ajuste conforme necessário */
+  width: 500px; /* Triplo do tamanho original */
+  height: 30px; /* Ajuste conforme necessário */
+  left: 0px; /* Ajuste conforme necessário */
+  transform: rotate(90deg); /* Girar o slot para ficar vertical */
+}
+
+.cpu {
+  width: 150px;
+}
+
+.cpu-slot {
+  width: 150px;
+  height: 150px;
+  top: 235px; /* Ajuste conforme necessário */
+  left: 330px; /* Ajuste conforme necessário */
+}
+
+.gpu {
+  width: 200px;
+}
+
+.gpu-slot {
+  width: 400px;
+  height: 30px;
+  top: 700px; /* Ajuste conforme necessário */
+  left: 250px; /* Ajuste conforme necessário */
+}
+
+.keyboard {
+  width: 180px;
+}
+.keyboard-slot {
+  width: 60px;
+  height: 48px;
+  top: 60px; /* Ajuste conforme necessário */
+  left: 100px; /* Ajuste conforme necessário */
+}
+
+.mouse {
+  width: 150px;
+}
+.mouse-slot {
+  width: 100px;
+  height: 50px;
+  top: 370px; /* Ajuste conforme necessário */
+  left: 50px; /* Ajuste conforme necessário */
+}
+
+.display {
+  width: 250px;
+}
+
+.display-slot {
+  width: 100px;
+  height: 50px;
+  top: 700px; /* Ajuste conforme necessário */
+  left: 50px; /* Ajuste conforme necessário */
+}
+
+.fonte {
+  width: 150px;
+}
+
+.fonte-slot {
+  width: 100px;
+  height: 50px;
+  top: 200px; /* Ajuste conforme necessário */
+  left: 200px; /* Ajuste conforme necessário */
+}
+
+.ram-encaixada,
+.cpu-encaixada,
+.gpu-encaixada,
+.keyboard-encaixada,
+.mouse-encaixada,
+.display-encaixada,
+.fonte-encaixada,
+.hd-encaixada{
+  display: none;
+  position: absolute;
+}
+
+.ram-encaixada {
+  width: 40px; /* Triplo do tamanho original */
+  top: 85px; /* Ajuste conforme necessário */
+  left: 583px; /* Ajuste conforme necessário */
+  /*transform: rotate(90deg); /* Girar a RAM encaixada para ficar vertical */
+  z-index: 10;
+}
+
+.cpu-encaixada{
+  width: 190px;
+  top: 310px; /* Ajuste conforme necessário */
+  left: 420px; /* Ajuste conforme necessário */
+  z-index: 10;
+}
+
+.gpu-encaixada, .gpu-slot{
+  width: 300px;
+  height: 30px;
+  top: 710px; /* Ajuste conforme necessário */
+  left: 550px; /* Ajuste conforme necessário */
+  z-index: 10;
+}
+
+.keyboard-encaixada {
+  width: 250px;
+  top: 80px; /* Ajuste conforme necessário */
+  left: -220px; /* Ajuste conforme necessário */
+  z-index: 10;
+}
+
+.mouse-encaixada {
+  width: 200px;
+  top: 300px; /* Ajuste conforme necessário */
+  left: -110px; /* Ajuste conforme necessário */
+  z-index: 10;
+}
+
+.display-slot {
+  width: 80px;
+  height: 50px;
+  top: 680px; /* Ajuste conforme necessário */
+  left: 380px; /* Ajuste conforme necessário */
+}
+
+.display-encaixada {
+  width: 150px;
+  top: 900px; /* Ajuste conforme necessário */
+  left: 380px; /* Ajuste conforme necessário */
+  z-index: 10;
+}
+.fonte-slot {
+  width: 40px;
+  height: 160px;
+  top: 320px; /* Ajuste conforme necessário */
+  left: 740px; /* Ajuste conforme necessário */
+}
+
+.fonte-encaixada {
+  width: 150px;
+  top: 0px; /* Ajuste conforme necessário */
+  left: 800px; /* Ajuste conforme necessário */
+  z-index: 10;
+}
+
+.hd-slot {
+  width: 40px;
+  height: 160px;
+  top: 420px; /* Ajuste conforme necessário */
+  left: 740px; /* Ajuste conforme necessário */
+}
+
+.hd-encaixada {
+  width: 150px;
+  top: 0px; /* Ajuste conforme necessário */
+  right: 30px; /* Ajuste conforme necessário */
+  z-index: 10;
+}
+
+/* Responsividade */
+
+/* Tamanho grande */
+@media (min-width: 1024px) {
+  .container {
+    width: 800px;
+  }
+
+  .components-list {
+    top: 80px;
+    right:250px;
+  }
+
+  .motherboard {
+    width:50%; 
+    align-items: center; 
+    margin-left: 200px;
+    margin-bottom: 100px;
+  }
+  .ram, .cpu, .gpu, .keyboard, .mouse, .display, .fonte, .hd{
+    width: 130px; /* Triplo do tamanho original */
+  }
+
+  .ram-slot, .ram-encaixada {
+    top: 320px; /* Ajuste conforme necessário */
+    width: 390px; /* Triplo do tamanho original */
+    height: 30px; /* Ajuste conforme necessário */
+    left: 490px; /* Ajuste conforme necessário */
+    transform: rotate(90deg); /* Girar o slot para ficar vertical */
+    }
+    .cpu-slot, .cpu-encaixada {
+    width: 140px;
+    height: 130px;
+    top: 260px; /* Ajuste conforme necessário */
+    left: 453px; /* Ajuste conforme necessário */
+  }
+  .gpu-slot, .gpu-encaixada {
+    width: 300px;
+    height: 30px;
+    top: 630px; /* Ajuste conforme necessário */
+    left: 400px; /* Ajuste conforme necessário */
+    z-index: 10;
+  }
+  .keyboard-slot{
+    width: 50px;
+    top: 115px; /* Ajuste conforme necessário */
+    left: 260px; /* Ajuste conforme necessário */
+    z-index: 10;
+  }
+
+  .keyboard-encaixada {
+    width: 200px;
+    top: 115px; /* Ajuste conforme necessário */
+    left: 90px; /* Ajuste conforme necessário */
+    z-index: 10;
+  }
+  .mouse-slot{
+    width: 75px;
+    top: 290px; /* Ajuste conforme necessário */
+    left: 250px; /* Ajuste conforme necessário */
+    z-index: 10;
+  }
+  .mouse-encaixada {
+    width: 160px;
+    top: 220px; /* Ajuste conforme necessário */
+    left: 110px; /* Ajuste conforme necessário */
+    z-index: 10;
+  }
+  
+  .display-slot {
+    width: 80px;
+    height: 40px;
+    top: 630px; /* Ajuste conforme necessário */
+    left: 260px; /* Ajuste conforme necessário */
+  }
+
+  .display-encaixada {
+    width: 230px;
+    top: 560px; /* Ajuste conforme necessário */
+    left: 60px; /* Ajuste conforme necessário */
+    z-index: 10;
+  }
+
+  .fonte-encaixada {
+    width: 200px;
+    top: 350px; /* Ajuste conforme necessário */
+    right: 30px; /* Ajuste conforme necessário */
+    z-index: 10;
+  }
+  .hd-slot {
+    width: 40px;
+    height: 100px;
+    top: 480px; /* Ajuste conforme necessário */
+    left: 740px; /* Ajuste conforme necessário */
+  }
+    .hd-encaixada {
+    width: 130px;
+    top: 520px; /* Ajuste conforme necessário */
+    right: 350px; /* Ajuste conforme necessário */
+    z-index: 10;
+  }
+}
+
+/* Tamanho médio */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 500px;
+  }
+
+  .ram-slot {
+    left: 200px;
+  }
+
+  .cpu-slot {
+    left: 180px;
+  }
+
+  .gpu-slot {
+    left: 100px;
+  }
+
+  .components-list {
+    top: 0;
+    right: -150px;
+  }
+}
+
+/* Tamanho pequeno */
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  .components-list {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .component {
+    margin: 5px;
+  }
+
+  .ram-slot {
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  .cpu-slot {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .gpu-slot {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
