@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinha os itens à esquerda e à direita */
+    height: 50px;
+    background-color: rgb(29, 29, 141);
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    padding-right: 50px;
+  }
+  
+  .titulo{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: aliceblue;
+  }
+  
+  .resolução{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+  }
+  

@@ -1,0 +1,197 @@
+/* Estilos globais */
+@import url(estilos/header.css);
+@import url(estilos/footer.css);
+
+section {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 10px;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start; /* Alinha os itens ao topo */
+  justify-content: center; /* Centraliza a motherboard e a lista de componentes */
+}
+
+.motherboard {
+  position: relative;
+  width: 800px; /* Ajuste conforme necessário */
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.components-list {
+  display: flex;
+  flex-direction: column; /* Coluna para a lista de componentes */
+  align-items: center; /* Alinha os itens ao centro */
+}
+
+.component {
+  width: 150px;
+  height: auto;
+  background-color: transparent; /* Define o fundo como transparente */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de transformação */
+}
+
+.component:hover {
+  transform: scale(1.30); /* Aumenta o tamanho do componente ao passar o mouse */
+}
+
+.component:active {
+  transform: scale(0.95); /* Reduz o tamanho do componente ao ser clicado */
+}
+
+/* Slots */
+.slot {
+  position: absolute;
+  border: 4px dashed;
+  /*background-color: #f9f9f9; /* Cor de fundo opcional */
+  z-index: 20; /* Valor maior para garantir que fiquem sobre a motherboard */
+}
+
+.ram-slot {
+  top: 160px; /* Ajuste conforme necessário */
+  left: 900px; /* Ajuste conforme necessário */
+  width: 25px;
+  height: 480px;
+  border-color: pink;
+  
+}
+
+.cpu-slot {
+  top: 330px; /* Ajuste conforme necessário */
+  left: 820px; /* Ajuste conforme necessário */
+  width: 140px;
+  height: 140px;
+  border-color: red;
+}
+.gpu-slot {
+  top: 790px; /* Ajuste conforme necessário */
+  left: 740px; /* Ajuste conforme necessário */
+  width: 380px;
+  height: 30px;
+  border-color: rgb(253, 12, 4);
+}
+
+.keyboard-slot {
+  top: 140px; /* Ajuste conforme necessário */
+  left: 210px; /* Ajuste conforme necessário */
+  width: 70px;
+  height: 50px;
+  border-color: rgb(241, 9, 9);
+}
+
+.mouse-slot {
+  top: 370px; /* Ajuste conforme necessário */
+  left: 350px; /* Ajuste conforme necessário */
+  width: 50px;
+  height: 50px;
+  border-color: orange;
+}
+
+.display-slot {
+  top: 780px; /* Ajuste conforme necessário */
+  left: 300px; /* Ajuste conforme necessário */
+  width: 80px;
+  height: 90px;
+  border-color: purple;
+}
+
+.fonte-slot {
+  top: 400px; /* Ajuste conforme necessário */
+  left: 830px; /* Ajuste conforme necessário */
+  width: 40px;
+  height: 170px;
+  border-color: rgb(245, 243, 243);
+}
+
+.hd-slot {
+  top: 590px; /* Ajuste conforme necessário */
+  left: 840px; /* Ajuste conforme necessário */
+  width: 40px;
+  height: 130px;
+  border-color: rgba(244, 244, 252, 0.918);
+}
+
+/* Componentes encaixados */
+.encaixado {
+  position: absolute;
+  display: none;
+  z-index: 20;
+}
+
+.ram-encaixada {
+  width: 25px;
+  height: 500px;
+  top: 160px; /* Ajuste conforme necessário */
+  left: 900px; /* Ajuste conforme necessário */
+}
+
+.cpu-encaixada {
+  width: 190px;
+  top: 30px; /* Ajuste conforme necessário */
+  left: 510px; /* Ajuste conforme necessário */
+}
+
+.gpu-encaixada {
+  width: 380px;
+  height: 30px;
+  top: 770px; /* Ajuste conforme necessário */
+  left: 520px; /* Ajuste conforme necessário */
+}
+
+.keyboard-encaixada {
+  width: 350px;
+  height: 90px;
+  top: 0px; /* Ajuste conforme necessário */
+  left: 370px; /* Ajuste conforme necessário */
+}
+
+.mouse-encaixada {
+  width: 200px;
+  height: auto;
+  top: 370px; /* Ajuste conforme necessário */
+  left: 350px; /* Ajuste conforme necessário */
+}
+
+.display-encaixada {
+  width: 230px;
+  height: 150px;
+  top: 300px; /* Ajuste conforme necessário */
+  left: 900px; /* Ajuste conforme necessário */
+}
+
+.fonte-encaixada {
+  width: 230px;
+  height: 150px;
+  top: 580px; /* Ajuste conforme necessário */
+  left: 440px; /* Ajuste conforme necessário */
+}
+
+.hd-encaixada {
+  width: 230px;
+  height: 150px;
+  top: 580px; /* Ajuste conforme necessário */
+  left: 500px; /* Ajuste conforme necessário */
+}
+
+/* Ocultar componentes encaixados */
+.ram-encaixada,
+.cpu-encaixada,
+.gpu-encaixada,
+.keyboard-encaixada,
+.mouse-encaixada,
+.display-encaixada,
+.fonte-encaixada,
+.hd-encaixada {
+  display: none;
+}
+.dragging {
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
