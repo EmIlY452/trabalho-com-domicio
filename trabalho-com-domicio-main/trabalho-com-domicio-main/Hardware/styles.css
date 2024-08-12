@@ -9,7 +9,7 @@ section {
   align-items: center;
   height: auto;
   margin: 10px;
-  background-color: #f0f0f0;
+  background-color: #8c9dc2;
 }
 
 .container {
@@ -56,7 +56,7 @@ section {
 
 .ram-slot {
   top: 160px; /* Ajuste conforme necessário */
-  left: 900px; /* Ajuste conforme necessário */
+  left: 1065px; /* Ajuste conforme necessário */
   width: 25px;
   height: 480px;
   border-color: pink;
@@ -104,7 +104,7 @@ section {
 
 .fonte-slot {
   top: 400px; /* Ajuste conforme necessário */
-  left: 830px; /* Ajuste conforme necessário */
+  left: 1150px; /* Ajuste conforme necessário */
   width: 40px;
   height: 170px;
   border-color: rgb(245, 243, 243);
@@ -112,7 +112,7 @@ section {
 
 .hd-slot {
   top: 590px; /* Ajuste conforme necessário */
-  left: 840px; /* Ajuste conforme necessário */
+  left: 1140px; /* Ajuste conforme necessário */
   width: 40px;
   height: 130px;
   border-color: rgba(244, 244, 252, 0.918);
