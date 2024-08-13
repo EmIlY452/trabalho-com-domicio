@@ -1,6 +1,7 @@
 /* Estilos globais */
 @import url(estilos/header.css);
 @import url(estilos/footer.css);
+@import url(estilos/botao.css);
 
 section {
   font-family: Arial, sans-serif;
@@ -56,7 +57,7 @@ section {
 
 .ram-slot {
   top: 160px; /* Ajuste conforme necessário */
-  left: 900px; /* Ajuste conforme necessário */
+  left: 1065px; /* Ajuste conforme necessário */
   width: 25px;
   height: 480px;
   border-color: pink;
@@ -65,9 +66,9 @@ section {
 
 .cpu-slot {
   top: 330px; /* Ajuste conforme necessário */
-  left: 820px; /* Ajuste conforme necessário */
+  left: 800px; /* Ajuste conforme necessário */
   width: 140px;
-  height: 140px;
+  height: 130px;
   border-color: red;
 }
 .gpu-slot {
@@ -80,7 +81,7 @@ section {
 
 .keyboard-slot {
   top: 140px; /* Ajuste conforme necessário */
-  left: 210px; /* Ajuste conforme necessário */
+  left: 230px; /* Ajuste conforme necessário */
   width: 70px;
   height: 50px;
   border-color: rgb(241, 9, 9);
@@ -88,7 +89,7 @@ section {
 
 .mouse-slot {
   top: 370px; /* Ajuste conforme necessário */
-  left: 350px; /* Ajuste conforme necessário */
+  left: 330px; /* Ajuste conforme necessário */
   width: 50px;
   height: 50px;
   border-color: orange;
@@ -96,15 +97,15 @@ section {
 
 .display-slot {
   top: 780px; /* Ajuste conforme necessário */
-  left: 300px; /* Ajuste conforme necessário */
+  left: 230px; /* Ajuste conforme necessário */
   width: 80px;
-  height: 90px;
+  height: 50px;
   border-color: purple;
 }
 
 .fonte-slot {
   top: 400px; /* Ajuste conforme necessário */
-  left: 830px; /* Ajuste conforme necessário */
+  left: 1150px; /* Ajuste conforme necessário */
   width: 40px;
   height: 170px;
   border-color: rgb(245, 243, 243);
@@ -112,7 +113,7 @@ section {
 
 .hd-slot {
   top: 590px; /* Ajuste conforme necessário */
-  left: 840px; /* Ajuste conforme necessário */
+  left: 1150px; /* Ajuste conforme necessário */
   width: 40px;
   height: 130px;
   border-color: rgba(244, 244, 252, 0.918);
@@ -129,13 +130,13 @@ section {
   width: 25px;
   height: 480px;
   top: 160px; /* Ajuste conforme necessário */
-  left: 800px; /* Ajuste conforme necessário */
+  left: 590px; /* Ajuste conforme necessário */
 }
 
 .cpu-encaixada {
   width: 190px;
   top: 30px; /* Ajuste conforme necessário */
-  left: 500px; /* Ajuste conforme necessário */
+  left: 325px; /* Ajuste conforme necessário */
 }
 
 .gpu-encaixada {
@@ -163,7 +164,7 @@ section {
   width: 230px;
   height: 150px;
   top: 300px; /* Ajuste conforme necessário */
-  left: 900px; /* Ajuste conforme necessário */
+  left: 200px; /* Ajuste conforme necessário */
 }
 
 .fonte-encaixada {
@@ -194,4 +195,14 @@ section {
 .dragging {
   transform: rotate(90deg);
   transition: transform 0.2s ease;
+}
+.acertou,.erro{
+  display:none;
+  font-size: 60px;
+  color:red;
+  margin: 20px;
+  text-align: center;  
+  }
+.div_de_espaço{
+  height: 60px;
 }

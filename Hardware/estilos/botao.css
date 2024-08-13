@@ -1,0 +1,24 @@
+#reiniciar-btn {
+    display: block;
+    margin: 20px auto; /* Centraliza o botão horizontalmente */
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #reiniciar-btn:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  }
+  
+  #reiniciar-btn:active {
+    background-color: #388E3C; /* Cor de fundo ao clicar */
+    transform: scale(0.98); /* Efeito de pressionado ao clicar */
+  }
+  
